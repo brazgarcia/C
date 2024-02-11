@@ -1,0 +1,47 @@
+Introdução na liguagem C
+
+Tipos de variáveis:
+  Será representado na forma de constante ou uma variável.
+  -> Básico:
+    Inteiro   == "int"
+    Real      == "float / double"
+    Caractere == "char"
+    Lógico    == "bool" (é necessário incluir a biiblioteca <stdbool.h>
+
+Símbolos de operações:
+  + == adição 
+  - == subtração 
+  / == divisão 
+  * == mutiplicação 
+  % == resto da divisão
+
+Símbilos:
+  >  == maior que
+  >= == maior ou igual que
+  <  == menor que 
+  <= == menor ou igual que
+  == == igual que
+  != == diferente que
+
+    obs: O símbolo "=" em C é utilizado para operações de atribuição (por exemplo, em x = a + b, lê-se x recebe o resultado da soma de a + b).
+
+Conectivos lógicos:
+  && == conjunção (^ / e)
+  || == disjunção (v / ou)
+  !  == negação   (~ / não)
+
+Conectivos relacionais:
+  == / != (geram um resultado lógico)
+
+
+
+
+
+
+
+
+
+
+
+
+
