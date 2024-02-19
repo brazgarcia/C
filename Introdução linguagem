@@ -1,6 +1,6 @@
 Introdução na liguagem C
 
-Tipos de variáveis:
+->Tipos de variáveis:
   Será representado na forma de constante ou uma variável.
   -> Básico:
     Inteiro   == "int"
@@ -8,14 +8,14 @@ Tipos de variáveis:
     Caractere == "char"
     Lógico    == "bool" (é necessário incluir a biiblioteca <stdbool.h>
 
-Símbolos de operações:
+->Símbolos de operações:
   + == adição 
   - == subtração 
   / == divisão 
   * == mutiplicação 
   % == resto da divisão
 
-Símbilos:
+->Símbilos:
   >  == maior que
   >= == maior ou igual que
   <  == menor que 
@@ -25,20 +25,20 @@ Símbilos:
 
     obs: O símbolo "=" em C é utilizado para operações de atribuição (por exemplo, em x = a + b, lê-se x recebe o resultado da soma de a + b).
 
-Conectivos lógicos:
+->Conectivos lógicos:
   && == conjunção (^ / e)
   || == disjunção (v / ou)
   !  == negação   (~ / não)
 
-Conectivos relacionais:
+->Conectivos relacionais:
   == / != (geram um resultado lógico)
 
-Constantes:
-  Em C, as constantes sãp definidas através da diretiva "define". Normalmente  as constantes são definidas com todas as letras maiúsculas:
+->Constantes:
+  Em C, as constantes são definidas através da diretiva "define". Normalmente as constantes são definidas com todas as letras maiúsculas:
     #define PI 3.1415
     #define TAMANHO 10
 
-Nomeando variáveis:
+->Nomeando variáveis:
   Exemplos corretos:
     - nome 
     - telefone
@@ -48,14 +48,14 @@ Nomeando variáveis:
     - Media
     - SOMA
 
-  Exempplos incorretos:
+  ->Exempplos incorretos:
     - 1ano
     - sal/hora
     - _nome
 
     Obs: Lembre-se que a linguagem C é case sensitive, ou seja, as letras maiúsculas diferem das minúsculas.
 
-  Declaração de variáveis:
+  ->Declaração de variáveis:
     <tipo> <nome_var>;
 
       Ex: 
@@ -66,7 +66,42 @@ Nomeando variáveis:
     Obs: Uma variável não pode ter o mesmo nome de uma palavra-chave da lingueagem C, 
 como por exemplo: main, int, float, char, short, return, case, void, etc.
 
+  ->Comandos Básicos:
+    De atribuição de valor para a variável
+      <variável> = <expressão> ;
+    
+        EX: 
+          int a, b, c, d;
+          a = 5;
+          c = 7;
+          b = a;
+          d = a + b + c;
 
+          int a = 5;
+          int c = 7;
+          int b, d;
+          b = a;
+          d = a + b+ c;
+
+      De utilização de operadores:
+  Operações aritméticas fornecem resultados númerico (inteiro ou real).
+
+        Ex:
+          a = a + b;
+          a = a + 4;
+          a = b / 2;
+          a = 4 * 2 + 3;
+          b = 2 * 3 - 2 * 2;
+
+  A prioridade de execução das operações em uma expressão:
+  1º () dos mais internos para os mais externos.
+  2º Expressões aritméticas, seguindo a ordem: Funções, * e /, + e -.
+  3º conectivos relacionais: <, <=, >, >=, == e !=.
+  4º Negação.
+  5º Conjunção.
+  6º Disjunção.
+  7º Da esquerda para a direita quando houver indeterminação.
+  
 
 
 
